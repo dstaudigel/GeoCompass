@@ -109,6 +109,9 @@
 	dipDirection *= -(n_downV.dot(cp)); // since it'll be -1 or +1, this works out perfectly.
 	
 	azimuthLabel.text = [NSString stringWithFormat:@"%.1f",dipDirection*(180/M_PI)];
+	
+	latitude.text = [NSString stringWithFormat:@"%3.5f",latitude];
+	longitude.text= [NSString stringWithFormat:@"%3.5f",longitude];
 }
 
 /*
