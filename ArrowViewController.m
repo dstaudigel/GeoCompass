@@ -24,6 +24,8 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	
+	NSLog(@"View did load!");
+	
 	accelerometer = [UIAccelerometer sharedAccelerometer];
 	accelerometer.delegate = self;
 	accelerometer.updateInterval = 0.1;
