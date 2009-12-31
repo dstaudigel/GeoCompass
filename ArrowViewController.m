@@ -42,7 +42,7 @@
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading
 {
-	arrow.transform = CGAffineTransformMakeRotation(newHeading.magneticHeading);
+	arrow.transform = CGAffineTransformMakeRotation(newHeading.magneticHeading * (M_PI/180.0));
 }
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation

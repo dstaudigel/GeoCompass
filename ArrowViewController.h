@@ -14,11 +14,11 @@
 	UIAccelerometer * accelerometer;
 	CLLocationManager * locationManager;
 	
-	UIImageView * arrow;
-	UILabel * latLabel;
-	UILabel * lonLabel;
-	UILabel * dipLabel;
-	UILabel * azimuthLabel;
+	IBOutlet UIImageView * arrow;
+	IBOutlet UILabel * latLabel;
+	IBOutlet UILabel * lonLabel;
+	IBOutlet UILabel * dipLabel;
+	IBOutlet UILabel * azimuthLabel;
 }
 
 @end
