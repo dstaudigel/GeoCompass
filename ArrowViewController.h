@@ -24,6 +24,8 @@ using namespace vmml;
 	float latitude;
 	float longitude;
 	
+	NSTimer * updateTimer;
+	
 	std::queue<Vector3f,std::deque<Vector3f> > downVA;
 	Vector3f downV_unscaled;
 	Vector3f downV,northV;
@@ -32,7 +34,11 @@ using namespace vmml;
 	IBOutlet UILabel * latLabel;
 	IBOutlet UILabel * lonLabel;
 	IBOutlet UILabel * dipLabel;
-	IBOutlet UILabel * azimuthLabel;
+	IBOutlet UILabel * dipDirLabel;
+	IBOutlet UILabel * strikeLabel;
+	
+	IBOutlet UIButton * holdButton;
 }
 - (void)updateView;
+- (IBAction)hold:(id)sender;
 @end

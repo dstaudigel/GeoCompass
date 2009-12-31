@@ -41,6 +41,8 @@
 	
 	[locationManager startUpdatingHeading];
 	[locationManager startUpdatingLocation];
+	
+	updateTimer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(updateView) userInfo:nil repeats:YES];
 }
 
 - (void)accelerometer:(UIAccelerometer *)acc didAccelerate:(UIAcceleration *)acceleration
@@ -58,28 +60,27 @@
 	}
 
 	downV = downV_unscaled / downVA.size();
-	
-	[self updateView];
 }
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)heading
 {
 	northV = Vector3f(heading.x,heading.y,heading.z);
-	
-	[self updateView];
 }
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
 {
 	latitude = newLocation.coordinate.latitude;
 	longitude = newLocation.coordinate.longitude;
-	
-	[self updateView];
 }
 
+- (IBAction)hold:(id)sender
+{
+	holdButton.selected = !holdButton.selected;
+}
 
 - (void)updateView
 {
+	if(holdButton.selected) return;
 	
 	const Vector3f dipV = Vector3f(downV.x,downV.y,0); // just remove Z component from 'down' to project into plane of phone
 	
@@ -121,8 +122,8 @@
 	if(dipDirection < 0)
 		dipDirection += 2*M_PI;
 	
-	azimuthLabel.text = [NSString stringWithFormat:@"%.1f",dipDirection*(180/M_PI)];
-	
+	dipDirLabel.text = [NSString stringWithFormat:@"%.1f",dipDirection*(180/M_PI)];
+	strikeLabel.text = [NSString stringWithFormat:@"%.1f",(dipDirection*(180/M_PI) + 90.0)];
 	latLabel.text = [NSString stringWithFormat:@"%3.5f",latitude];
 	lonLabel.text= [NSString stringWithFormat:@"%3.5f",longitude];
 }
