@@ -21,6 +21,10 @@
     
     // Override point for customization after app launch    
 
+	arrowViewController = [[ArrowViewController alloc] initWithNibName:@"Arrow" bundle:nil];
+	
+	[window addSubview:arrowViewController.view];
+	
 	[window makeKeyAndVisible];
 }
 
