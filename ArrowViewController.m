@@ -79,8 +79,11 @@
 	float nGY = downY / gLen;
 	
 	dipLabel.text = [NSString stringWithFormat:@"%.1f",atan2(downZ,downLen)*180./M_PI+90.];
-	
 	arrow.transform = CGAffineTransformMakeRotation(angle);	
+	// set the lat/lon labels
+	latLabel.text = [NSString stringWithFormat:@"%f",latitude];
+	lonLabel.text = [NSString stringWithFormat:@"%f",longitude];
+
 }
 
 /*
