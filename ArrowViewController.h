@@ -10,6 +10,7 @@
 #import <CoreLocation/CoreLocation.h>
 
 #include "vector3.h"
+#include <queue>
 
 using namespace vmml;
 
@@ -18,13 +19,13 @@ using namespace vmml;
 	UIAccelerometer * accelerometer;
 	CLLocationManager * locationManager;
 	
+	float averaging_time;
+	
 	float latitude;
 	float longitude;
-	 
-	Vector3f downV,northV;
 	
-	float downX,downY,downZ;
-	float northX,northY,northZ;
+	std::queue<Vector3f> downVA;
+	Vector3f downV,northV;
 	
 	IBOutlet UIImageView * arrow;
 	IBOutlet UILabel * latLabel;

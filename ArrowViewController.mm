@@ -35,28 +35,38 @@
 	locationManager = [[CLLocationManager alloc] init];
 	locationManager.delegate = self;
 	
+	locationManager.headingFilter = kCLHeadingFilterNone;
+	
 	[locationManager startUpdatingHeading];
 	[locationManager startUpdatingLocation];
 }
 
 - (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration
 {
-	downX = acceleration.x;
-	downY = acceleration.y;
-	downZ = acceleration.z;
+	Vector3f d(acceleration.x,acceleration.y,acceleration.z);
+	downVA.push_back(d);
 	
-	downV = Vector3f(downX,downY,downZ);
+	while(downVA.length() > averaging_time/accelerometer.updateInterval)
+	{
+		downVA.pop_front();
+	}
+	
+	Vector3f down(0,0,0);
+	
+	queue<Vector3f>::const_iterator cii;
+	for(cii=downVA.begin() ; cii!=downVA.end() ; cii++)
+	{
+		down += cii;
+	}
+	
+	downV = down;
 	
 	[self updateView];
 }
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading
 {
-	northX = newHeading.x;
-	northY = newHeading.y;
-	northZ = newHeading.z;
-
-	northV = Vector3f(northX,northY,northZ);
+	Vector3f n(northX,northY,northZ);
 	
 	[self updateView];
 }
