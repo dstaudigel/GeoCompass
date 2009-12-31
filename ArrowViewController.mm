@@ -41,32 +41,28 @@
 	[locationManager startUpdatingLocation];
 }
 
-- (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration
+- (void)accelerometer:(UIAccelerometer *)acc didAccelerate:(UIAcceleration *)acceleration
 {
 	Vector3f d(acceleration.x,acceleration.y,acceleration.z);
-	downVA.push_back(d);
 	
-	while(downVA.length() > averaging_time/accelerometer.updateInterval)
+	downV_unscaled += d;
+	downVA.push(d);
+	
+	int targetN = averaging_time/accelerometer.updateInterval;
+	while(downVA.size() > targetN)
 	{
-		downVA.pop_front();
+		downV_unscaled -= downVA.front();
+		downVA.pop();
 	}
-	
-	Vector3f down(0,0,0);
-	
-	queue<Vector3f>::const_iterator cii;
-	for(cii=downVA.begin() ; cii!=downVA.end() ; cii++)
-	{
-		down += cii;
-	}
-	
-	downV = down;
+
+	downV = downV_unscaled / downVA.size();
 	
 	[self updateView];
 }
 
-- (void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading
+- (void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)heading
 {
-	Vector3f n(northX,northY,northZ);
+	northV = Vector3f(heading.x,heading.y,heading.z);
 	
 	[self updateView];
 }
@@ -83,13 +79,13 @@
 - (void)updateView
 {
 	
-	const Vector3f dipV = Vector3f(downX,downY,0); // just remove Z component from 'down' to project into plane of phone
+	const Vector3f dipV = Vector3f(downV.x,downV.y,0); // just remove Z component from 'down' to project into plane of phone
 	
 	// the angle (w.r.t. phone) of 'down', i.e. the angle for the arrow
 	float angle = -atan2(dipV.y,dipV.x) + M_PI/2.;
 	arrow.transform = CGAffineTransformMakeRotation(angle);
 
-	dipLabel.text = [NSString stringWithFormat:@"%.1f",atan2(downZ,dipV.length())*180./M_PI+90.];
+	dipLabel.text = [NSString stringWithFormat:@"%.1f",atan2(downV.z,dipV.length())*180./M_PI+90.];
 	
 	// We must project both northV (north vector in phone coordinate system)
 	// and dipV (dip vector in phone coordinate system) onto the plane of the earth,

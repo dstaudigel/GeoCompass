@@ -24,7 +24,8 @@ using namespace vmml;
 	float latitude;
 	float longitude;
 	
-	std::queue<Vector3f> downVA;
+	std::queue<Vector3f,std::deque<Vector3f> > downVA;
+	Vector3f downV_unscaled;
 	Vector3f downV,northV;
 	
 	IBOutlet UIImageView * arrow;
