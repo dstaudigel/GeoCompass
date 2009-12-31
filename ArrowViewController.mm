@@ -106,9 +106,9 @@
 	
 	// now we want whether or not the cross product is in the same direction or the opposite of g, telling us the sign of the angle!
 	
-	dipDirection *= (n_downV.dot(cp)); // since it'll be -1 or +1, this works out perfectly.
+	dipDirection *= -(n_downV.dot(cp)); // since it'll be -1 or +1, this works out perfectly.
 	
-	azimuthLabel.text = [NSString stringWithFormat:@"%.1f",dipDirection];
+	azimuthLabel.text = [NSString stringWithFormat:@"%.1f",dipDirection*(180/M_PI)];
 }
 
 /*
