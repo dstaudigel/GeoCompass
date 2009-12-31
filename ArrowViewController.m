@@ -68,7 +68,17 @@
 - (void)updateView
 {
 	// get the angle in the plane of the phone
-	float angle = acos ( downY / sqrt(downX*downX + downY*downY) );
+	float angle = atan2(downY,downX);
+	
+	float downLen = sqrt(downX*downX+downY*downY);
+	float nDownX = downX/downLen;
+	float nDownY = downY/downLen;
+	
+	float gLen = sqrt(downX*downX+downY*downY+downZ*downZ);
+	float nGX = downX / gLen;
+	float nGY = downY / gLen;
+	
+	dipLabel.text = [NSString stringWithFormat:@"%f",atan2(downZ,downLen)];
 	
 	arrow.transform = CGAffineTransformMakeRotation(angle);	
 }
