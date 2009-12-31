@@ -8,7 +8,8 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
-#import "vmmlib.h"
+
+#include "vector3.h"
 
 @interface ArrowViewController : UIViewController <CLLocationManagerDelegate,UIAccelerometerDelegate>
 {
@@ -18,9 +19,6 @@
 	float latitude;
 	float longitude;
 	 
-	Vector3f downV;
-	Vector3f northV;
-		
 	float downX,downY,downZ;
 	float northX,northY,northZ;
 	
