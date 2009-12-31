@@ -14,11 +14,17 @@
 	UIAccelerometer * accelerometer;
 	CLLocationManager * locationManager;
 	
+	float latitude;
+	float longitude;
+	
+	float downX,downY,downZ;
+	float northX,northY,northZ;
+	
 	IBOutlet UIImageView * arrow;
 	IBOutlet UILabel * latLabel;
 	IBOutlet UILabel * lonLabel;
 	IBOutlet UILabel * dipLabel;
 	IBOutlet UILabel * azimuthLabel;
 }
-
+- (void)updateView;
 @end

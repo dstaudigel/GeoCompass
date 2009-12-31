@@ -39,17 +39,38 @@
 
 - (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration
 {
+	downX = acceleration.x;
+	downY = acceleration.y;
+	downZ = acceleration.z;
 	
+	[self updateView];
 }
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading
 {
-	arrow.transform = CGAffineTransformMakeRotation(newHeading.magneticHeading * (M_PI/180.0));
+	
+	northX = newHeading.x;
+	northY = newHeading.y;
+	northZ = newHeading.z;
+	
+	[self updateView];
 }
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
 {
+	latitude = newLocation.coordinate.latitude;
+	longitude = newLocation.coordinate.longitude;
 	
+	[self updateView];
+}
+
+
+- (void)updateView
+{
+	// get the angle in the plane of the phone
+	float angle = acos ( downY / sqrt(downX*downX + downY*downY) );
+	
+	arrow.transform = CGAffineTransformMakeRotation(angle);	
 }
 
 /*
