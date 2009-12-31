@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D3623260D0F684500981E51 /* GeoCompassAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* GeoCompassAppDelegate.m */; };
+		1D3623260D0F684500981E51 /* GeoCompassAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* GeoCompassAppDelegate.mm */; };
+		1D5AAA8A10ED441E00F5EBCB /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 1D5AAA7410ED441E00F5EBCB /* LICENSE */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DD02A3F10ED211D009644B2 /* Arrow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DD02A3E10ED211D009644B2 /* Arrow.xib */; };
 		1DD02A4210ED21B7009644B2 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DD02A4110ED21B7009644B2 /* arrow.png */; };
-		1DD02A4610ED2315009644B2 /* ArrowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD02A4510ED2315009644B2 /* ArrowViewController.m */; };
+		1DD02A4610ED2315009644B2 /* ArrowViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1DD02A4510ED2315009644B2 /* ArrowViewController.mm */; };
 		1DD02A4E10ED246A009644B2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD02A4D10ED246A009644B2 /* CoreLocation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
@@ -24,12 +25,49 @@
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* GeoCompassAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoCompassAppDelegate.h; sourceTree = "<group>"; };
-		1D3623250D0F684500981E51 /* GeoCompassAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoCompassAppDelegate.m; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* GeoCompassAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GeoCompassAppDelegate.mm; sourceTree = "<group>"; };
+		1D5AAA6510ED441E00F5EBCB /* axisAlignedBoundingBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = axisAlignedBoundingBox.h; sourceTree = "<group>"; };
+		1D5AAA6610ED441E00F5EBCB /* details.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = details.hpp; sourceTree = "<group>"; };
+		1D5AAA6710ED441E00F5EBCB /* exception.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = exception.hpp; sourceTree = "<group>"; };
+		1D5AAA6810ED441E00F5EBCB /* frustum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = frustum.h; sourceTree = "<group>"; };
+		1D5AAA6910ED441E00F5EBCB /* frustum.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = frustum.hpp; sourceTree = "<group>"; };
+		1D5AAA6A10ED441E00F5EBCB /* frustumCuller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = frustumCuller.h; sourceTree = "<group>"; };
+		1D5AAA6B10ED441E00F5EBCB /* frustumCuller.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = frustumCuller.hpp; sourceTree = "<group>"; };
+		1D5AAA6C10ED441E00F5EBCB /* helperFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = helperFunctions.h; sourceTree = "<group>"; };
+		1D5AAA6D10ED441E00F5EBCB /* jacobiSolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jacobiSolver.h; sourceTree = "<group>"; };
+		1D5AAA6E10ED441E00F5EBCB /* jacobiSolver.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = jacobiSolver.hpp; sourceTree = "<group>"; };
+		1D5AAA6F10ED441E00F5EBCB /* lapack.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = lapack.hpp; sourceTree = "<group>"; };
+		1D5AAA7010ED441E00F5EBCB /* lapack_includes.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = lapack_includes.hpp; sourceTree = "<group>"; };
+		1D5AAA7110ED441E00F5EBCB /* lapack_linear_least_squares.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = lapack_linear_least_squares.hpp; sourceTree = "<group>"; };
+		1D5AAA7210ED441E00F5EBCB /* lapack_svd.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = lapack_svd.hpp; sourceTree = "<group>"; };
+		1D5AAA7310ED441E00F5EBCB /* lapack_types.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = lapack_types.hpp; sourceTree = "<group>"; };
+		1D5AAA7410ED441E00F5EBCB /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1D5AAA7510ED441E00F5EBCB /* linear_least_squares.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = linear_least_squares.hpp; sourceTree = "<group>"; };
+		1D5AAA7610ED441E00F5EBCB /* matrix.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix.hpp; sourceTree = "<group>"; };
+		1D5AAA7710ED441E00F5EBCB /* matrix3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matrix3.h; sourceTree = "<group>"; };
+		1D5AAA7810ED441E00F5EBCB /* matrix4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matrix4.h; sourceTree = "<group>"; };
+		1D5AAA7910ED441E00F5EBCB /* matrix_functors.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_functors.hpp; sourceTree = "<group>"; };
+		1D5AAA7A10ED441E00F5EBCB /* qr_decomposition.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = qr_decomposition.hpp; sourceTree = "<group>"; };
+		1D5AAA7B10ED441E00F5EBCB /* quaternion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quaternion.h; sourceTree = "<group>"; };
+		1D5AAA7C10ED441E00F5EBCB /* quaternion.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = quaternion.hpp; sourceTree = "<group>"; };
+		1D5AAA7D10ED441E00F5EBCB /* stringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stringUtils.h; sourceTree = "<group>"; };
+		1D5AAA7E10ED441E00F5EBCB /* stringUtils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = stringUtils.hpp; sourceTree = "<group>"; };
+		1D5AAA7F10ED441E00F5EBCB /* svd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = svd.h; sourceTree = "<group>"; };
+		1D5AAA8010ED441E00F5EBCB /* svd.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = svd.hpp; sourceTree = "<group>"; };
+		1D5AAA8110ED441E00F5EBCB /* vector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector.hpp; sourceTree = "<group>"; };
+		1D5AAA8210ED441E00F5EBCB /* vector2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vector2.h; sourceTree = "<group>"; };
+		1D5AAA8310ED441E00F5EBCB /* vector3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vector3.h; sourceTree = "<group>"; };
+		1D5AAA8410ED441E00F5EBCB /* vector4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vector4.h; sourceTree = "<group>"; };
+		1D5AAA8510ED441E00F5EBCB /* visibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = visibility.h; sourceTree = "<group>"; };
+		1D5AAA8610ED441E00F5EBCB /* visibility.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = visibility.hpp; sourceTree = "<group>"; };
+		1D5AAA8710ED441E00F5EBCB /* vmmlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vmmlib.h; sourceTree = "<group>"; };
+		1D5AAA8810ED441E00F5EBCB /* vmmlib.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vmmlib.hpp; sourceTree = "<group>"; };
+		1D5AAA8910ED441E00F5EBCB /* vmmlib_config.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vmmlib_config.hpp; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* GeoCompass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoCompass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DD02A3E10ED211D009644B2 /* Arrow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Arrow.xib; sourceTree = "<group>"; };
 		1DD02A4110ED21B7009644B2 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
 		1DD02A4410ED2315009644B2 /* ArrowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArrowViewController.h; path = ../ArrowViewController.h; sourceTree = "<group>"; };
-		1DD02A4510ED2315009644B2 /* ArrowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArrowViewController.m; path = ../ArrowViewController.m; sourceTree = "<group>"; };
+		1DD02A4510ED2315009644B2 /* ArrowViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ArrowViewController.mm; path = ../ArrowViewController.mm; sourceTree = "<group>"; };
 		1DD02A4D10ED246A009644B2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = /System/Library/Frameworks/CoreLocation.framework; sourceTree = "<absolute>"; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,9 +99,9 @@
 			isa = PBXGroup;
 			children = (
 				1D3623240D0F684500981E51 /* GeoCompassAppDelegate.h */,
-				1D3623250D0F684500981E51 /* GeoCompassAppDelegate.m */,
+				1D3623250D0F684500981E51 /* GeoCompassAppDelegate.mm */,
 				1DD02A4410ED2315009644B2 /* ArrowViewController.h */,
-				1DD02A4510ED2315009644B2 /* ArrowViewController.m */,
+				1DD02A4510ED2315009644B2 /* ArrowViewController.mm */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -74,6 +112,50 @@
 				1D6058910D05DD3D006BFB54 /* GeoCompass.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1D5AAA6410ED441E00F5EBCB /* vmmlib */ = {
+			isa = PBXGroup;
+			children = (
+				1D5AAA6510ED441E00F5EBCB /* axisAlignedBoundingBox.h */,
+				1D5AAA6610ED441E00F5EBCB /* details.hpp */,
+				1D5AAA6710ED441E00F5EBCB /* exception.hpp */,
+				1D5AAA6810ED441E00F5EBCB /* frustum.h */,
+				1D5AAA6910ED441E00F5EBCB /* frustum.hpp */,
+				1D5AAA6A10ED441E00F5EBCB /* frustumCuller.h */,
+				1D5AAA6B10ED441E00F5EBCB /* frustumCuller.hpp */,
+				1D5AAA6C10ED441E00F5EBCB /* helperFunctions.h */,
+				1D5AAA6D10ED441E00F5EBCB /* jacobiSolver.h */,
+				1D5AAA6E10ED441E00F5EBCB /* jacobiSolver.hpp */,
+				1D5AAA6F10ED441E00F5EBCB /* lapack.hpp */,
+				1D5AAA7010ED441E00F5EBCB /* lapack_includes.hpp */,
+				1D5AAA7110ED441E00F5EBCB /* lapack_linear_least_squares.hpp */,
+				1D5AAA7210ED441E00F5EBCB /* lapack_svd.hpp */,
+				1D5AAA7310ED441E00F5EBCB /* lapack_types.hpp */,
+				1D5AAA7410ED441E00F5EBCB /* LICENSE */,
+				1D5AAA7510ED441E00F5EBCB /* linear_least_squares.hpp */,
+				1D5AAA7610ED441E00F5EBCB /* matrix.hpp */,
+				1D5AAA7710ED441E00F5EBCB /* matrix3.h */,
+				1D5AAA7810ED441E00F5EBCB /* matrix4.h */,
+				1D5AAA7910ED441E00F5EBCB /* matrix_functors.hpp */,
+				1D5AAA7A10ED441E00F5EBCB /* qr_decomposition.hpp */,
+				1D5AAA7B10ED441E00F5EBCB /* quaternion.h */,
+				1D5AAA7C10ED441E00F5EBCB /* quaternion.hpp */,
+				1D5AAA7D10ED441E00F5EBCB /* stringUtils.h */,
+				1D5AAA7E10ED441E00F5EBCB /* stringUtils.hpp */,
+				1D5AAA7F10ED441E00F5EBCB /* svd.h */,
+				1D5AAA8010ED441E00F5EBCB /* svd.hpp */,
+				1D5AAA8110ED441E00F5EBCB /* vector.hpp */,
+				1D5AAA8210ED441E00F5EBCB /* vector2.h */,
+				1D5AAA8310ED441E00F5EBCB /* vector3.h */,
+				1D5AAA8410ED441E00F5EBCB /* vector4.h */,
+				1D5AAA8510ED441E00F5EBCB /* visibility.h */,
+				1D5AAA8610ED441E00F5EBCB /* visibility.hpp */,
+				1D5AAA8710ED441E00F5EBCB /* vmmlib.h */,
+				1D5AAA8810ED441E00F5EBCB /* vmmlib.hpp */,
+				1D5AAA8910ED441E00F5EBCB /* vmmlib_config.hpp */,
+			);
+			path = vmmlib;
 			sourceTree = "<group>";
 		};
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
@@ -92,6 +174,7 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				1D5AAA6410ED441E00F5EBCB /* vmmlib */,
 				32CA4F630368D1EE00C91783 /* GeoCompass_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
@@ -166,6 +249,7 @@
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				1DD02A3F10ED211D009644B2 /* Arrow.xib in Resources */,
 				1DD02A4210ED21B7009644B2 /* arrow.png in Resources */,
+				1D5AAA8A10ED441E00F5EBCB /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,9 +261,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
-				1D3623260D0F684500981E51 /* GeoCompassAppDelegate.m in Sources */,
+				1D3623260D0F684500981E51 /* GeoCompassAppDelegate.mm in Sources */,
 				28C3AD8A0F43EF2300507BA6 /* GeoCompass.xcdatamodel in Sources */,
-				1DD02A4610ED2315009644B2 /* ArrowViewController.m in Sources */,
+				1DD02A4610ED2315009644B2 /* ArrowViewController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,227 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/vmmlib/!svn/ver/220/trunk/include/vmmlib
+END
+lapack.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/vmmlib/!svn/ver/183/trunk/include/vmmlib/lapack.hpp
+END
+svd.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/vmmlib/!svn/ver/219/trunk/include/vmmlib/svd.hpp
+END
+exception.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/vmmlib/!svn/ver/218/trunk/include/vmmlib/exception.hpp
+END
+vector.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/vmmlib/!svn/ver/220/trunk/include/vmmlib/vector.hpp
+END
+matrix.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/vmmlib/!svn/ver/220/trunk/include/vmmlib/matrix.hpp
+END
+linear_least_squares.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/vmmlib/!svn/ver/138/trunk/include/vmmlib/linear_least_squares.hpp
+END
+frustum.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/vmmlib/!svn/ver/208/trunk/include/vmmlib/frustum.hpp
+END
+lapack_svd.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/vmmlib/!svn/ver/218/trunk/include/vmmlib/lapack_svd.hpp
+END
+helperFunctions.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/vmmlib/!svn/ver/108/trunk/include/vmmlib/helperFunctions.h
+END
+frustumCuller.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/vmmlib/!svn/ver/168/trunk/include/vmmlib/frustumCuller.h
+END
+jacobiSolver.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/vmmlib/!svn/ver/108/trunk/include/vmmlib/jacobiSolver.h
+END
+quaternion.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/vmmlib/!svn/ver/217/trunk/include/vmmlib/quaternion.h
+END
+details.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/vmmlib/!svn/ver/169/trunk/include/vmmlib/details.hpp
+END
+vmmlib.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/vmmlib/!svn/ver/107/trunk/include/vmmlib/vmmlib.h
+END
+axisAlignedBoundingBox.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/vmmlib/!svn/ver/107/trunk/include/vmmlib/axisAlignedBoundingBox.h
+END
+visibility.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/vmmlib/!svn/ver/197/trunk/include/vmmlib/visibility.hpp
+END
+stringUtils.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/vmmlib/!svn/ver/215/trunk/include/vmmlib/stringUtils.hpp
+END
+svd.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/vmmlib/!svn/ver/151/trunk/include/vmmlib/svd.h
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/vmmlib/!svn/ver/95/trunk/include/vmmlib/LICENSE
+END
+frustum.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/vmmlib/!svn/ver/208/trunk/include/vmmlib/frustum.h
+END
+vmmlib_config.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/vmmlib/!svn/ver/156/trunk/include/vmmlib/vmmlib_config.hpp
+END
+frustumCuller.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/vmmlib/!svn/ver/208/trunk/include/vmmlib/frustumCuller.hpp
+END
+qr_decomposition.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/vmmlib/!svn/ver/150/trunk/include/vmmlib/qr_decomposition.hpp
+END
+lapack_types.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/vmmlib/!svn/ver/189/trunk/include/vmmlib/lapack_types.hpp
+END
+lapack_linear_least_squares.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/vmmlib/!svn/ver/189/trunk/include/vmmlib/lapack_linear_least_squares.hpp
+END
+lapack_includes.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/vmmlib/!svn/ver/189/trunk/include/vmmlib/lapack_includes.hpp
+END
+jacobiSolver.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/vmmlib/!svn/ver/187/trunk/include/vmmlib/jacobiSolver.hpp
+END
+vector2.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/vmmlib/!svn/ver/217/trunk/include/vmmlib/vector2.h
+END
+vector3.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/vmmlib/!svn/ver/217/trunk/include/vmmlib/vector3.h
+END
+quaternion.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/vmmlib/!svn/ver/208/trunk/include/vmmlib/quaternion.hpp
+END
+vector4.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/vmmlib/!svn/ver/217/trunk/include/vmmlib/vector4.h
+END
+vmmlib.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/vmmlib/!svn/ver/165/trunk/include/vmmlib/vmmlib.hpp
+END
+stringUtils.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/vmmlib/!svn/ver/184/trunk/include/vmmlib/stringUtils.h
+END
+matrix_functors.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/vmmlib/!svn/ver/187/trunk/include/vmmlib/matrix_functors.hpp
+END
+matrix3.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/vmmlib/!svn/ver/184/trunk/include/vmmlib/matrix3.h
+END
+visibility.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/vmmlib/!svn/ver/201/trunk/include/vmmlib/visibility.h
+END
+matrix4.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/vmmlib/!svn/ver/188/trunk/include/vmmlib/matrix4.h
+END
