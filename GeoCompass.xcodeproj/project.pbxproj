@@ -117,6 +117,7 @@
 		1D5AAA6410ED441E00F5EBCB /* vmmlib */ = {
 			isa = PBXGroup;
 			children = (
+				1D5AAA8310ED441E00F5EBCB /* vector3.h */,
 				1D5AAA6510ED441E00F5EBCB /* axisAlignedBoundingBox.h */,
 				1D5AAA6610ED441E00F5EBCB /* details.hpp */,
 				1D5AAA6710ED441E00F5EBCB /* exception.hpp */,
@@ -147,7 +148,6 @@
 				1D5AAA8010ED441E00F5EBCB /* svd.hpp */,
 				1D5AAA8110ED441E00F5EBCB /* vector.hpp */,
 				1D5AAA8210ED441E00F5EBCB /* vector2.h */,
-				1D5AAA8310ED441E00F5EBCB /* vector3.h */,
 				1D5AAA8410ED441E00F5EBCB /* vector4.h */,
 				1D5AAA8510ED441E00F5EBCB /* visibility.h */,
 				1D5AAA8610ED441E00F5EBCB /* visibility.hpp */,
@@ -285,15 +285,6 @@
 				GCC_PREFIX_HEADER = GeoCompass_Prefix.pch;
 				GCC_THUMB_SUPPORT = YES;
 				INFOPLIST_FILE = "GeoCompass-Info.plist";
-				OTHER_CFLAGS = (
-					"-lobjcpp",
-					"-lobjc++",
-				);
-				OTHER_LDFLAGS = (
-					"-objc++",
-					"-objc",
-					"-lcpp",
-				);
 				PRODUCT_NAME = GeoCompass;
 			};
 			name = Debug;

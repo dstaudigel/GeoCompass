@@ -11,6 +11,8 @@
 
 #include "vector3.h"
 
+using namespace vmml;
+
 @interface ArrowViewController : UIViewController <CLLocationManagerDelegate,UIAccelerometerDelegate>
 {
 	UIAccelerometer * accelerometer;
@@ -19,6 +21,8 @@
 	float latitude;
 	float longitude;
 	 
+	Vector3f downV,northV;
+	
 	float downX,downY,downZ;
 	float northX,northY,northZ;
 	

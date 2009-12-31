@@ -7,6 +7,7 @@
 
 #import "ArrowViewController.h"
 #include "vmmlib.h"
+#include "vector3.h"
 
 @implementation ArrowViewController
 
@@ -44,15 +45,18 @@
 	downY = acceleration.y;
 	downZ = acceleration.z;
 	
+	downV = Vector3f(downX,downY,downZ);
+	
 	[self updateView];
 }
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading
 {
-	
 	northX = newHeading.x;
 	northY = newHeading.y;
 	northZ = newHeading.z;
+
+	northV = Vector3f(northX,northY,northZ);
 	
 	[self updateView];
 }
@@ -68,9 +72,7 @@
 
 - (void)updateView
 {
-	Vector3f downV(downX,downY,downZ) const;
-	Vector3f northV(northX,northY,northZ) const;
-		
+	
 	const Vector3f dipV = Vector3f(downX,downY,0); // just remove Z component from 'down' to project into plane of phone
 	
 	// the angle (w.r.t. phone) of 'down', i.e. the angle for the arrow
