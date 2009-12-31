@@ -117,7 +117,7 @@
 	dipDirection *= -(n_downV.dot(cp)); // since it'll be -1 or +1, this works out perfectly.
 	
 	if(dipDirection < 0)
-		dipDirection += 360;
+		dipDirection += 2*M_PI;
 	
 	azimuthLabel.text = [NSString stringWithFormat:@"%.1f",dipDirection*(180/M_PI)];
 	
