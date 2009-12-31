@@ -110,8 +110,8 @@
 	
 	azimuthLabel.text = [NSString stringWithFormat:@"%.1f",dipDirection*(180/M_PI)];
 	
-	latitude.text = [NSString stringWithFormat:@"%3.5f",latitude];
-	longitude.text= [NSString stringWithFormat:@"%3.5f",longitude];
+	latLabel.text = [NSString stringWithFormat:@"%3.5f",latitude];
+	lonLabel.text= [NSString stringWithFormat:@"%3.5f",longitude];
 }
 
 /*
