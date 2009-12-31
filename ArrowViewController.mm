@@ -28,6 +28,8 @@
 	
 	NSLog(@"View did load!");
 	
+	averaging_time = 0.5;
+	
 	accelerometer = [UIAccelerometer sharedAccelerometer];
 	accelerometer.delegate = self;
 	accelerometer.updateInterval = 0.1;
