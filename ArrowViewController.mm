@@ -99,14 +99,19 @@
 	// Now that we have these two, take their cross product, whose magnitude is proportional to sin(theta), the angle between them
 	
 	Vector3f cp = hplane_dipV.cross(hplane_northV);
+	float dp = hplane_dipV.dot(hplane_northV);
+	
 	float len = cp.length(); // get length of vector
 	cp /= len; // normalize
 	
-	float dipDirection = asin(len); // now we have the angle
+	float dipDirection = acos(dp); // now we have the angle
 	
 	// now we want whether or not the cross product is in the same direction or the opposite of g, telling us the sign of the angle!
 	
 	dipDirection *= -(n_downV.dot(cp)); // since it'll be -1 or +1, this works out perfectly.
+	
+	if(dipDirection < 0)
+		dipDirection += 360;
 	
 	azimuthLabel.text = [NSString stringWithFormat:@"%.1f",dipDirection*(180/M_PI)];
 	
