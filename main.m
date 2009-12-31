@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 int main(int argc, char *argv[]) {
-    
+    // Hi, it's mom!
     NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
     int retVal = UIApplicationMain(argc, argv, nil, nil);
     [pool release];
