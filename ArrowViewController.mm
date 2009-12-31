@@ -121,9 +121,12 @@
 	
 	if(dipDirection < 0)
 		dipDirection += 2*M_PI;
+	float strikeDirection = dipDirection*(180/M_PI) - 90.0;
+	if(strikeDirection < 0)
+		strikeDirection += 360;
 	
 	dipDirLabel.text = [NSString stringWithFormat:@"%.1f",dipDirection*(180/M_PI)];
-	strikeLabel.text = [NSString stringWithFormat:@"%.1f",(dipDirection*(180/M_PI) + 90.0)];
+	strikeLabel.text = [NSString stringWithFormat:@"%.1f",(strikeDirection)];
 	latLabel.text = [NSString stringWithFormat:@"%3.5f",latitude];
 	lonLabel.text= [NSString stringWithFormat:@"%3.5f",longitude];
 }
