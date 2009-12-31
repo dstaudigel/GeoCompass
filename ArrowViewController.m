@@ -68,7 +68,7 @@
 - (void)updateView
 {
 	// get the angle in the plane of the phone
-	float angle = acos ( downY / sqrt(downX*downX + downY*downY) );
+	float angle = -atan2(downY,downX)+M_PI/2.;
 	
 	arrow.transform = CGAffineTransformMakeRotation(angle);	
 }
