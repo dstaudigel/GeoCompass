@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D081488118D05D4007C52A1 /* GCDataPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D081487118D05D4007C52A1 /* GCDataPoint.m */; };
+		1D0814B0118D0DBC007C52A1 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D0814AF118D0DBC007C52A1 /* icon.png */; };
 		1D3623260D0F684500981E51 /* GeoCompassAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* GeoCompassAppDelegate.mm */; };
 		1D5AAA8A10ED441E00F5EBCB /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 1D5AAA7410ED441E00F5EBCB /* LICENSE */; };
 		1D60589B0D05DD56006BFB54 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.mm */; };
@@ -23,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D081486118D05D4007C52A1 /* GCDataPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDataPoint.h; sourceTree = "<group>"; };
+		1D081487118D05D4007C52A1 /* GCDataPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDataPoint.m; sourceTree = "<group>"; };
+		1D0814AF118D0DBC007C52A1 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* GeoCompassAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoCompassAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* GeoCompassAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GeoCompassAppDelegate.mm; sourceTree = "<group>"; };
@@ -102,6 +107,8 @@
 				1D3623250D0F684500981E51 /* GeoCompassAppDelegate.mm */,
 				1DD02A4410ED2315009644B2 /* ArrowViewController.h */,
 				1DD02A4510ED2315009644B2 /* ArrowViewController.mm */,
+				1D081486118D05D4007C52A1 /* GCDataPoint.h */,
+				1D081487118D05D4007C52A1 /* GCDataPoint.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -184,6 +191,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1D0814AF118D0DBC007C52A1 /* icon.png */,
 				28C3AD890F43EF2300507BA6 /* GeoCompass.xcdatamodel */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* GeoCompass-Info.plist */,
@@ -250,6 +258,7 @@
 				1DD02A3F10ED211D009644B2 /* Arrow.xib in Resources */,
 				1DD02A4210ED21B7009644B2 /* arrow.png in Resources */,
 				1D5AAA8A10ED441E00F5EBCB /* LICENSE in Resources */,
+				1D0814B0118D0DBC007C52A1 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +273,7 @@
 				1D3623260D0F684500981E51 /* GeoCompassAppDelegate.mm in Sources */,
 				28C3AD8A0F43EF2300507BA6 /* GeoCompass.xcdatamodel in Sources */,
 				1DD02A4610ED2315009644B2 /* ArrowViewController.mm in Sources */,
+				1D081488118D05D4007C52A1 /* GCDataPoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
