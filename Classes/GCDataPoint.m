@@ -10,34 +10,6 @@
 
 
 @implementation GCDataPoint
-@synthesize index=mIndex;
-@synthesize date=mDate;
-@synthesize dipDir=mDipDir;
-@synthesize dip=mDip;
-@synthesize latitude=mLatitude;
-@synthesize longitude=mLognitude;
-@synthesize identifier=mIdentifier;
-
-+ (GCDataPoint*)createDataPoint {
-  GCDataPoint * ret = [[self alloc] init];
-  
-  
-  
-  return [ret autorelease];
-}
-
-- (id)init {
-  if(self = [super init]) {
-    mDate = [NSDate date];
-    
-    NSUserDefaults * ud = [NSUserDefaults standardUserDefaults];
-    
-    mIndex = [ud integerForKey:@"index"]+1;
-    [ud setInteger:mIndex
-	    forKey:@"index"];
-  }
-  return self;
-}
 
 - (NSString *)encodedString {
   NSDateFormatter * df = [[NSDateFormatter alloc] init];
