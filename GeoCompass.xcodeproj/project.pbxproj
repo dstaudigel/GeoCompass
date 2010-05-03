@@ -13,6 +13,7 @@
 		1D5AAA8A10ED441E00F5EBCB /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 1D5AAA7410ED441E00F5EBCB /* LICENSE */; };
 		1D60589B0D05DD56006BFB54 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.mm */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DA4B4D3118F7AFF00960667 /* GeoCompass.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1DA4B4D2118F7AFF00960667 /* GeoCompass.xcdatamodeld */; };
 		1DD02A3F10ED211D009644B2 /* Arrow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DD02A3E10ED211D009644B2 /* Arrow.xib */; };
 		1DD02A4210ED21B7009644B2 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DD02A4110ED21B7009644B2 /* arrow.png */; };
 		1DD02A4610ED2315009644B2 /* ArrowViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1DD02A4510ED2315009644B2 /* ArrowViewController.mm */; };
@@ -20,7 +21,6 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
-		28C3AD8A0F43EF2300507BA6 /* GeoCompass.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 28C3AD890F43EF2300507BA6 /* GeoCompass.xcdatamodel */; };
 		28D801B40F44B63D00FB423F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D801B30F44B63D00FB423F /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
@@ -192,7 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				1D0814AF118D0DBC007C52A1 /* icon.png */,
-				28C3AD890F43EF2300507BA6 /* GeoCompass.xcdatamodel */,
+				1DA4B4D2118F7AFF00960667 /* GeoCompass.xcdatamodeld */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* GeoCompass-Info.plist */,
 				1DD02A4110ED21B7009644B2 /* arrow.png */,
@@ -271,7 +271,7 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.mm in Sources */,
 				1D3623260D0F684500981E51 /* GeoCompassAppDelegate.mm in Sources */,
-				28C3AD8A0F43EF2300507BA6 /* GeoCompass.xcdatamodel in Sources */,
+				1DA4B4D3118F7AFF00960667 /* GeoCompass.xcdatamodeld in Sources */,
 				1DD02A4610ED2315009644B2 /* ArrowViewController.mm in Sources */,
 				1D081488118D05D4007C52A1 /* GCDataPoint.m in Sources */,
 			);
@@ -363,6 +363,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1DA4B4D2118F7AFF00960667 /* GeoCompass.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				28C3AD890F43EF2300507BA6 /* GeoCompass.xcdatamodel */,
+			);
+			currentVersion = 28C3AD890F43EF2300507BA6 /* GeoCompass.xcdatamodel */;
+			path = GeoCompass.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
 }
