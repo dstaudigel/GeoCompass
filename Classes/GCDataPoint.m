@@ -11,19 +11,33 @@
 
 @implementation GCDataPoint
 
+@dynamic date;
+@dynamic dip;
+@dynamic dipDir;
+@dynamic latitude;
+@dynamic longitude;
+
++ (GCDataPoint *)newDataPointInDefaultContext {
+  return [NSEntityDescription insertNewObjectForEntityForName:@"compassDataPoint"
+				       inManagedObjectContext:[[[UIApplication sharedApplication] delegate] managedObjectContext]];
+}
+
 - (NSString *)encodedString {
   NSDateFormatter * df = [[NSDateFormatter alloc] init];
   
   [df setTimeStyle:NSDateFormatterShortStyle];
   [df setDateStyle:NSDateFormatterShortStyle];
   
-  return [NSString stringWithFormat:@"%4i : %3.0f/%2.0f @ (%2.4fN,%3.4fE) - %@",
-	  self.index,
-	  self.dipDir,
-	  self.dip,
-	  self.latitude,
-	  self.longitude,
+  NSLog(@"index: %i",self.index);
+  Log(@"Date: %@",self.date);
+  
+  return [NSString stringWithFormat:@"%.4i : %3.0f/%2.0f @ (%2.4fN,%3.4fE) - %@",
+	  [self.dipDir floatValue],
+	  [self.dip floatValue],
+	  [self.latitude floatValue],
+	  [self.longitude floatValue],
 	  [df stringFromDate:self.date]];
 }
 
 @end
+
