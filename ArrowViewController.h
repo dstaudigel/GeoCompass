@@ -16,6 +16,8 @@ using namespace vmml;
 
 @interface ArrowViewController : UIViewController <CLLocationManagerDelegate,UIAccelerometerDelegate>
 {
+  NSManagedObjectContext * managedObjectContext;
+  
   UIAccelerometer * accelerometer;
   CLLocationManager * locationManager;
   
@@ -30,6 +32,8 @@ using namespace vmml;
   Vector3f downV_unscaled;
   Vector3f downV,northV;
   
+  float dip,dipDir;
+  
   IBOutlet UIImageView * arrow;
   IBOutlet UILabel * latLabel;
   IBOutlet UILabel * lonLabel;
@@ -39,6 +43,12 @@ using namespace vmml;
   
   IBOutlet UIButton * holdButton;
 }
+
+@property(readonly) float dip;
+@property(readonly) float dipDir;
+
+@property(assign) NSManagedObjectContext * managedObjectContext;
 - (void)updateView;
 - (IBAction)hold:(id)sender;
+- (IBAction)save:(id)sender;
 @end
