@@ -9,14 +9,13 @@
 #import "ArrowViewController.h"
 
 @interface GeoCompassAppDelegate : NSObject <UIApplicationDelegate> {
-
-    NSManagedObjectModel *managedObjectModel;
-    NSManagedObjectContext *managedObjectContext;	    
-    NSPersistentStoreCoordinator *persistentStoreCoordinator;
-
-    UIWindow *window;
-	
-	ArrowViewController * arrowViewController;
+  NSManagedObjectModel *managedObjectModel;
+  NSManagedObjectContext *managedObjectContext;	    
+  NSPersistentStoreCoordinator *persistentStoreCoordinator;
+  
+  UIWindow *window;
+  
+  ArrowViewController * arrowViewController;
 }
 
 @property (nonatomic, retain, readonly) NSManagedObjectModel *managedObjectModel;

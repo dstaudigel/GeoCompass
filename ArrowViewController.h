@@ -16,28 +16,28 @@ using namespace vmml;
 
 @interface ArrowViewController : UIViewController <CLLocationManagerDelegate,UIAccelerometerDelegate>
 {
-	UIAccelerometer * accelerometer;
-	CLLocationManager * locationManager;
-	
-	float averaging_time;
-	
-	float latitude;
-	float longitude;
-	
-	NSTimer * updateTimer;
-	
-	std::queue<Vector3f,std::deque<Vector3f> > downVA;
-	Vector3f downV_unscaled;
-	Vector3f downV,northV;
-	
-	IBOutlet UIImageView * arrow;
-	IBOutlet UILabel * latLabel;
-	IBOutlet UILabel * lonLabel;
-	IBOutlet UILabel * dipLabel;
-	IBOutlet UILabel * dipDirLabel;
-	IBOutlet UILabel * strikeLabel;
-	
-	IBOutlet UIButton * holdButton;
+  UIAccelerometer * accelerometer;
+  CLLocationManager * locationManager;
+  
+  float averaging_time;
+  
+  float latitude;
+  float longitude;
+  
+  NSTimer * updateTimer;
+  
+  std::queue<Vector3f,std::deque<Vector3f> > downVA;
+  Vector3f downV_unscaled;
+  Vector3f downV,northV;
+  
+  IBOutlet UIImageView * arrow;
+  IBOutlet UILabel * latLabel;
+  IBOutlet UILabel * lonLabel;
+  IBOutlet UILabel * dipLabel;
+  IBOutlet UILabel * dipDirLabel;
+  IBOutlet UILabel * strikeLabel;
+  
+  IBOutlet UIButton * holdButton;
 }
 - (void)updateView;
 - (IBAction)hold:(id)sender;
