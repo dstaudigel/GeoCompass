@@ -28,8 +28,8 @@
   [df setTimeStyle:NSDateFormatterShortStyle];
   [df setDateStyle:NSDateFormatterShortStyle];
   
-  NSLog(@"index: %i",self.index);
-  Log(@"Date: %@",self.date);
+//  NSLog(@"index: %i",self.index);
+  //Log(@"Date: %@",self.date);
   
   return [NSString stringWithFormat:@"%.4i : %3.0f/%2.0f @ (%2.4fN,%3.4fE) - %@",
 	  [self.dipDir floatValue],
